@@ -57,7 +57,7 @@ namespace DSO.AST.Nodes
 		{
 			writer.Write("if", " ", "(");
 			writer.Write(Test, isExpression: true);
-			writer.Write(")", "\n", "{", "\n");
+			writer.Write(")", " ", "{", "\n");
 
 			True.ForEach(node => writer.Write(node, isExpression: false));
 
@@ -77,7 +77,7 @@ namespace DSO.AST.Nodes
 			}
 			else
 			{
-				writer.Write("\n", "{", "\n");
+				writer.Write(" ", "{", "\n");
 				False.ForEach(node => writer.Write(node, isExpression: false));
 				writer.Write("}", "\n");
 			}

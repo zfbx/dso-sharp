@@ -52,7 +52,7 @@ namespace DSO.AST.Nodes
 				}
 			}
 
-			writer.Write(")", "\n", "{", "\n");
+			writer.Write(")", " ", "{", "\n");
 			Body.ForEach(node => writer.Write(node, isExpression: false));
 			writer.Write("}", "\n", "\n");
 		}
@@ -70,7 +70,7 @@ namespace DSO.AST.Nodes
 
 		public override void Visit(CodeWriter writer, bool isExpression)
 		{
-			writer.Write("package", " ", Name, "\n", "{", "\n");
+			writer.Write("package", " ", Name, " ", "{", "\n");
 			Functions.ForEach(function => writer.Write(function, isExpression: false));
 			writer.Write("}", ";", "\n");
 		}

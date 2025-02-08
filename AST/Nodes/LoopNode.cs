@@ -22,7 +22,7 @@ namespace DSO.AST.Nodes
 
 		public override void Visit(CodeWriter writer, bool isExpression)
 		{
-			writer.Write("do", "\n", "{", "\n");
+			writer.Write("do", " ", "{", "\n");
 
 			Body.ForEach(node => writer.Write(node, isExpression: false));
 
@@ -41,7 +41,7 @@ namespace DSO.AST.Nodes
 		{
 			writer.Write("while", " ", "(");
 			writer.Write(Test, isExpression: true);
-			writer.Write(")", "\n", "{", "\n");
+			writer.Write(")", " ", "{", "\n");
 
 			Body.ForEach(node => writer.Write(node, isExpression: false));
 
@@ -67,7 +67,7 @@ namespace DSO.AST.Nodes
 			writer.Write(Test, isExpression: true);
 			writer.Write(";", " ");
 			writer.Write(End, isExpression: true);
-			writer.Write(")", "\n", "{", "\n");
+			writer.Write(")", " ", "{", "\n");
 
 			Body.ForEach(node => writer.Write(node, isExpression: false));
 

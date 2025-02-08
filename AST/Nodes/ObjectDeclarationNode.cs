@@ -86,7 +86,7 @@ namespace DSO.AST.Nodes
 
 			if (Fields.Count > 0 || Children.Count > 0)
 			{
-				writer.Write("\n", "{", "\n");
+				writer.Write(" ", "{", "\n");
 
 				Fields.ForEach(field => writer.Write(field, isExpression: false));
 

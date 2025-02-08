@@ -7,12 +7,12 @@
     <Nullable>enable</Nullable>
     <PublishAot>False</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
-    <FileVersion>2.2.0</FileVersion>
-    <AssemblyVersion>2.2.0</AssemblyVersion>
-    <Version>2.2.0</Version>
+    <FileVersion>2.2.1</FileVersion>
+    <AssemblyVersion>2.2.1</AssemblyVersion>
+    <Version>2.2.1</Version>
     <PackageId>dso-sharp</PackageId>
     <Title>DSO Sharp</Title>
-    <Authors>Elletra</Authors>
+    <Authors>Elletra, zfbx</Authors>
     <Product>DSO Sharp</Product>
     <Description>A DSO decompiler for the Torque Game Engine.</Description>
     <ApplicationIcon>icon.ico</ApplicationIcon>
